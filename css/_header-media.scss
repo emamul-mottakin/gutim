@@ -27,8 +27,30 @@
 /*container-end*/
 
 
+header{
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*from *xsm* to sm device*/
-@media(max-width:575px){
+@include xsm(){
     .header-grid{
         width:300px;
         h1{

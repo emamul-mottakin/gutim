@@ -1099,7 +1099,7 @@ footer #copy .copy-grid .social-icons i:hover {
 
 /*container-end*/
 /*from *xsm* to sm device*/
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
   .header-grid {
     width: 300px;
   }
