@@ -1155,7 +1155,7 @@ footer #copy .copy-grid .social-icons i:hover {
 
 /*** for mobile device end ***/
 /**from xsm to lg**/
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   nav ul .nav-btn {
     margin-left: 0px;
   }

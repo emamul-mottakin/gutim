@@ -26,29 +26,6 @@
 }
 /*container-end*/
 
-
-header{
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*from *xsm* to sm device*/
 @include xsm(){
     .header-grid{
@@ -103,7 +80,7 @@ header{
 /*** for mobile device end ***/
 
 /**from xsm to lg**/
-@media(max-width:991px){
+@include xsm-to-leptop(){
     nav ul .nav-btn{
         margin-left:0px;
     }
