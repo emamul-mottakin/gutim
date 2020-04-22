@@ -1,0 +1,18 @@
+/*feature-section-media-start*/
+@media(max-width:991px){
+    .features-grid{
+        grid-template-columns:1fr;
+        grid-template-rows:repeat(3,min-content);
+    }
+}
+
+@media(min-width:992px){
+    .features-grid{
+        grid-template-columns:2fr 1fr 1fr;
+        grid-template-rows:668px;
+    }
+    .service-sec-1,.service-sec-2{
+        margin-bottom:-7px;
+    }
+}
+/*feature-section-media-end*/

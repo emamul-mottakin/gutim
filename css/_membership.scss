@@ -1,0 +1,78 @@
+#membership{
+    @include section-padding();
+    text-align:center;
+    height:1800px;
+    h1{
+        font-size:42px;
+    }
+    @include leptop(){
+        height:550px;
+    }
+    .card-grid{
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:repeat(3,min-content);
+        grid-gap:40px;
+        @include leptop(){
+            grid-template-columns:repeat(3,1fr);  
+            grid-column-gap:30px; 
+            grid-row-gap:0px;
+        }
+        .card{
+            box-shadow: 0px 8px 59px -17px $second-dark-color;
+            padding-bottom:4rem;
+            background-color:$light-color;
+            h1:first-child{
+                background-image:linear-gradient(to right, $primary-color,$secondary-color);
+                font-size:25px;
+                color:$light-color;
+                padding:1.2rem 0;
+                position:relative;
+            }
+            h1:first-child::after{
+                content:"";
+                position:absolute;
+                bottom:-9px;
+                width:0px;
+                height:0px;
+                left:0;
+                right:0;
+                margin:auto;
+                border-right:20px solid transparent;
+                border-bottom:20px solid $third-color;
+                transform:rotate(-45deg);
+            }
+            h1:nth-child(2){
+                margin:2rem 0 1rem 0;
+                display:inline-block;
+                color:$third-color;
+            }
+            span{
+                color:$second-dark-color;
+            }
+            ul{
+                padding-bottom:3.5rem;
+                li{
+                    font-weight:bold;
+                    list-style:none;
+                }
+            }
+            ul li:nth-child(odd){
+                color:$second-dark-color;
+                margin:5px 0;
+            }
+            a{
+                color:#000;
+                font-weight:bold;
+                padding-left:3rem;
+                padding-right:3rem;
+                transition:.5s;
+            }
+            a:hover{
+
+                background-image:linear-gradient(to right, $primary-color,$secondary-color);
+                color:$light-color;
+            }
+        }
+    }
+}

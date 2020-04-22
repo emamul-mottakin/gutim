@@ -1,0 +1,123 @@
+/*container-start*/
+@media (max-width: 575px) {
+    .container{
+        width:90%;
+    }
+}
+@media (min-width: 576px) {
+    .container{
+        max-width:540px;
+    }
+}
+@media (min-width:768px) {
+    .container{
+        max-width:720px;
+    }
+}
+@media (min-width:992px) {
+    .container{
+        max-width:960px;
+    }
+}
+@media (min-width:1200px) {
+    .container{
+        max-width:1140px;
+    }
+}
+/*container-end*/
+
+
+/*from *xsm* to sm device*/
+@media(max-width:575px){
+    .header-grid{
+        width:300px;
+        h1{
+            font-size:45px;
+            font-weight:600px;
+        }
+    }
+}
+/*form *xsm* to sm device end*/
+
+/*from *xsm* to sm device*/
+@media(min-width:576px){
+    .header-grid{
+        width:510px;
+        h1{
+            font-size:65px;
+            font-weight:600px;
+        }
+    }
+}
+/*form *xsm* to sm device end*/
+
+/*** for mobile device 767px ***/
+@include xsm-to-tablet(){
+    .nav-btn{
+        display:none;
+    }
+    .show-menu{
+        float:right;
+        margin-top:23px;
+        padding:7px 10px;
+        background:#222222;
+        font-weight:bold;
+        font-size:17px;
+    }
+    nav ul{
+        display:block;
+        background: #222;
+        width:100%;
+        height:0px;
+        li{
+            margin:25px 15px;
+            a{font-size:15px;font-weight:bold;}
+        }
+    }
+    #chk:checked ~ ul{
+        height:320px;
+    }
+}
+/*** for mobile device end ***/
+
+/**from xsm to lg**/
+@media(max-width:991px){
+    nav ul .nav-btn{
+        margin-left:0px;
+    }
+    nav ul a{
+        font-size:17px;
+        margin:0px 7px;
+    }
+    .nav-btn{
+        font-size:17px;
+        padding:10px 10px;
+    }
+}
+/**from xsm to lg end **/
+
+
+/*from **md** device to upper device*/
+@media(min-width:768px){
+    nav ul li{
+        display:inline-block;
+        line-height:80px;
+        font-weight:bold;
+    }
+    .show-menu{
+        display:none;
+    }
+}
+/*from **md** device to upper device end*/
+
+
+/*from **lg** device to upper device end*/
+@media(min-width:992px){
+    nav ul .nav-btn{
+        margin-left:40px;
+    }
+    nav ul a{
+        margin:0px 12px;
+    }
+}
+/*from **lg** device to upper device end*/

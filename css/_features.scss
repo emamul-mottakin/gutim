@@ -1,0 +1,27 @@
+.features-grid{
+    display:grid;
+    h1{
+        margin:2rem 0 1rem;
+    }
+    p{
+        color:$second-light-color;
+    }
+    .features {
+        margin-bottom: -7px;
+        img{
+            width:100%;
+            height:100%;
+        }
+    }
+    .service-sec-1,.service-sec-2{
+        background:$dark-color-1;
+        padding:2.5rem 2.5rem 0;
+        color:$light-color;
+        .service-1,.service-2,.service-3,.service-4{
+            margin-bottom:7rem;
+        }
+    }
+    .service-sec-2{
+        background:$dark-color-2;
+    }
+}

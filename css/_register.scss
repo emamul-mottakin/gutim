@@ -1,0 +1,72 @@
+#register{
+    @include section-padding(16rem 0 5rem 0);
+    background:$section-light-color;
+    color:$second-dark-color;
+    .register-grid{
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:repeat(2, min-content);
+        grid-row-gap:30px;
+        @include leptop() {
+            grid-template-columns:67% 33%;
+            grid-gap:0;
+        }
+        .register-form{
+            background-color:$light-color;
+            padding:3rem 0;
+            .register-details{
+                text-align:center;
+                padding:0 6rem 1rem 6rem;
+                @include xsm(){
+                    padding:0;
+                }
+                h1{
+                    font-size:42px;
+                    color:#000;
+                }
+                p{
+                    font-size:16px;
+                }
+            }
+            form{
+                padding:0 5rem;
+                @include leptop(){
+                    display:grid;
+                    grid-template-columns:1fr 1fr;
+                    grid-template-rows:repeat(2,min-content);
+                    grid-gap:30px;
+                    input[type="submit"]{
+                        grid-row:2/3;
+                        grid-column:1/3;
+                    }
+                }
+                label{
+                    display:block;
+                    font-size:14px;
+                    margin:1rem 0 .8rem 0;
+                }
+                input{
+                    width:100%;
+                    padding:.9rem;
+                    border:1px solid #ececec;
+                }
+                .mobile input{
+                    margin-bottom:3rem;
+                    @include leptop(){
+                        margin-bottom:1rem;
+                    }
+                }
+                
+            }
+        }
+        .register-pic{
+            img{
+                width:100%;
+                @include leptop(){
+                    width:100%;
+                    height:100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+#story{
+    @include section-padding();
+    text-align:center;
+    h1{
+        text-align:center;
+        font-size:40px;
+        margin-bottom:1.5rem;
+        font-weight:600;
+    }
+    .container{
+        position:relative;
+        .stories{
+            @media screen and (min-width:768px){
+                width:650px;
+                margin:auto;
+            }
+            .stories-slide{
+
+                p:first-child{
+                    font-size:20px;
+                }
+                .stories-person{
+                    width:200px;
+                    margin:3rem auto 2rem auto;
+                    img:first-child{
+                        float:left;
+                        margin-left:65px
+                    }
+                    img:nth-child(2){
+                       margin-top:20px;
+                       border-radius:50%;
+                       margin-top:-32px;
+                    }
+                    h4{
+                        font-size:22px;
+                        margin-bottom:10px;
+                    }
+                    p{
+                        color:$third-color;
+                    }
+                }
+            }
+            .slide-left-button{
+                margin-right:10px;
+                font-size:40px;
+                color:$second-light-color;
+                @media screen and (min-width:768px){
+                    position:absolute;
+                    top:47%;
+                    left:-20px;
+                }
+            }
+            .slide-right-button{
+                margin-left:10px;
+                font-size:40px;
+                color:$second-light-color;
+                @media screen and (min-width:768px){
+                    position:absolute;
+                    right:-20px;
+                    top:47%;
+                }
+            }
+            a:hover{
+                color:$secondary-color;
+            }
+        }
+    }
+}

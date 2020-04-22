@@ -1,0 +1,121 @@
+footer{
+    @include section-padding();
+    background-color:$dark-color-2;
+    color:$light-color;
+    #contact{
+        .contacts{
+            display:grid;
+        @include tablet(){
+            grid-template-columns: repeat(3,1fr);
+            grid-column-gap:35px;
+        }
+            .address{
+                p:first-child{
+                    color:$third-color;
+                    font-size:15px;
+                }
+                p:last-child{
+                    padding:1rem 0;
+                }
+            }
+        }
+    }
+    #footer-banner-2{
+        .footer-banner-background{
+            background-image: url(../image/header-bg.jpg);
+            background-size:cover;
+            background-repeat:no-repeat;
+            .footer-banner-2-overlay{
+                padding:3rem;
+                background-color: rgba(0, 0, 0, 0.5);
+                height:250px;
+                margin:3rem 0;
+                @include leptop(){
+                    height:160px;
+                }
+                @include xsm(){
+                    height:300px;
+                }
+                .footer-banner-2-grid{
+                    @include leptop(){
+                        display:grid;
+                        grid-template-columns: repeat(2,1fr);
+                    }
+                    .do-subscribe{
+                        p{
+                            font-size:17px;
+                            padding:1rem 0;
+                        }
+                    }
+                    .subscribe{
+                        input{
+                            width:300px;
+                            padding:1rem 1.5rem;
+                            float:left;
+                            text-align:left;
+                            @include xsm(){
+                                width:70%;
+                            }
+                        }
+                        i{
+                            padding:15px 30px;
+                            background-image:linear-gradient(to right, $primary-color,$secondary-color);
+                            font-size:20px;
+                            float:left;
+                            line-height:21px;
+                            @include xsm(){
+                                width:27%;
+                                padding:0;
+                                height:51px;
+                                text-align:center;
+                                line-height:50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #copy{
+        text-align:center;
+        .copy-grid{
+            .team-user{
+                a{
+                    text-decoration:none;
+                    color:$light-color;
+                }
+                a{
+                    margin-right:1.5rem;
+                }
+                span{
+                    display:block;
+                    margin-top:1rem;
+                    @include leptop(){
+                        display:inline-block;
+                    }
+                }
+            }
+            .copyright{
+                margin:2rem 1rem;
+
+            }
+            .social-icons{
+                i{
+                    background-color:rgba(255, 255, 255, 0.089);
+                    width: 50px;
+                    height: 50px;
+                    border-radius:50%;
+                    line-height:50px;
+                }
+                i:hover{
+                    background-image:linear-gradient(to right, $primary-color,$secondary-color);
+                }
+            }
+        }
+        .team-user,.copyright,.social-icons{
+            @include leptop(){
+                display:inline-block;
+            }
+        }
+    }
+}

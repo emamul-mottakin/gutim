@@ -1,0 +1,35 @@
+/*about-us-start*/
+.about{
+    @include section-padding();
+    
+    .about-grid{
+        display:grid;
+        
+        .about-pic{
+            position:relative;
+            img{
+                width:100%;
+            }
+            .play-btn{
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                margin:auto;
+                width:25%;
+            }
+        }
+        h1{
+            font-size:2.5rem;
+        }
+        P{
+            margin:15px 0px 15px;
+            color:$second-dark-color;
+        }
+        p:last-child{
+            margin:0px 0px 3.5rem;
+        }
+    }
+}
+/*about-us-end*/

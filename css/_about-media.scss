@@ -1,0 +1,24 @@
+/*-about-media-start*/
+@media(max-width:991px){
+    .about-grid{
+        grid-template-columns:100%;
+        grid-template-rows:min-content min-content 50px;
+        a{
+            place-self:start start;
+        }
+    }
+}
+@media(min-width:992px){
+    .about-grid{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:min-content min-content;
+        grid-column-gap:50px;
+        .btn{
+            justify-self:start;
+            grid-row:3/4;
+            grid-column:2/3;
+        }
+    }
+    
+}
+/*about-media-end*/

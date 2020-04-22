@@ -1,0 +1,46 @@
+#banner{
+    background-image: url(../image/banner.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    color:$light-color;
+    height: 949px;
+    overflow: hidden;
+    transition:0s;
+    @media screen and (min-width:992px){
+        overflow: hidden;
+        height:687px;
+    }
+    @include xsm(){
+        height:840px;
+    }
+    .banner-overlay{
+        background-color: rgba(0, 0, 0, 0.76);
+        padding-top:5rem;
+        .banner-grid{
+            display:grid;
+            grid-template-columns:1fr;
+            grid-template-rows:min-content;
+            grid-gap:50px;
+            @media screen and (min-width:992px){
+                grid-template-columns:1fr 1fr;
+            }
+            .banner-content{
+                align-self:center;
+                h1{
+                    font-size:40px;
+                }
+                p{
+                    margin:1rem 0 4rem 0;
+                }
+            }
+            .banner-pic{
+                img{
+                    @include xsm(){
+                        width:300px;
+                    }
+                }
+            }
+        }
+    }
+}
