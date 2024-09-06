@@ -15,13 +15,18 @@ Gutim is an awesome gym and fitness website template that works great for all ki
 
 ## Technologies Used:
 HTML: I used HTML to lay out the content and define the site's structure.
+
 CSS: With CSS, I styled the entire site, making sure it looked great and was responsive across different devices, from desktops to mobile phones.
+
 SASS: With the help of CSS preprocessor SASS I've made this project more efficient, maintainable, and consistent styles across projects.
 
 ## Key Features:
 Responsive Design: I made sure the website looks good and functions well on any screen size, ensuring a seamless user experience on both mobile and desktop.
+
 Custom Animations: I added smooth transitions and hover effects that enhance the visual appeal and make the user experience more engaging.
+
 Cross-Browser Compatibility: I worked to ensure the site looks and works consistently across different browsers, which was a bit challenging but crucial for a good user experience.
+
 Performance Optimization: To keep the site fast and responsive, I focused on optimizing performance
 
 ## Reference
